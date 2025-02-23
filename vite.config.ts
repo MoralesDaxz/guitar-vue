@@ -1,10 +1,8 @@
-import { fileURLToPath, URL } from 'node:url'
-import path from "path";
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import path from 'path'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
@@ -12,7 +10,6 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-     
         "@/": path.resolve(__dirname, "src"),
         "@/components": path.resolve(__dirname, "src/components"),
         "@/views": path.resolve(__dirname, "src/views"),
@@ -20,7 +17,9 @@ export default defineConfig({
         "@/assets": path.resolve(__dirname, "src/assets"),
         "@/store": path.resolve(__dirname, "src/store"),
         "@/utils": path.resolve(__dirname, "src/utils"),
-      /* '@': fileURLToPath(new URL('./src', import.meta.url)) */
     },
+  },
+  server: {
+    historyApiFallback: true, // <-- Correctly placed within the server property
   },
 })
