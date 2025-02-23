@@ -10,7 +10,7 @@
 <h1 class="col-8 my-0 text-center">Bienvenidos</h1>
     <img
       class="col-2 img-fluid z-1 position-relative bottom-0"
-      src="/img/guitarra_02.png"
+      src="/img/guitarra_06.png"
       alt="img_header"
     />
   </header>
