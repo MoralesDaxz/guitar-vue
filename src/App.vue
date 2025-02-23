@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <main id="app" class="d-flex flex-column h-100">
-    <NavBar />
+  <NavBar />
+  <main id="app" class="d-flex flex-column">
   </main>
 </template>
-
-<style scoped></style>

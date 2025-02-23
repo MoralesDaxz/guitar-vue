@@ -19,7 +19,4 @@ export default defineConfig({
         "@/utils": path.resolve(__dirname, "src/utils"),
     },
   },
-  server: {
-    historyApiFallback: true, // <-- Correctly placed within the server property
-  },
 })

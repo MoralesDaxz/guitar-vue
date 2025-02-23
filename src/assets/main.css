@@ -2,3 +2,6 @@
 * ::after {
     box-sizing: border-box;
 }
+.h-min{
+    min-height: 100vh;
+}

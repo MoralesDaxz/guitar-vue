@@ -44,7 +44,7 @@
 </script>
 <template>
   <button
-    v-if="!isModalOpen"
+    v-if="cart.length > 0 && !isModalOpen"
     class="position-fixed z-1 mt-2 end-0 btn btn-info"
     title="Carrito de Compras"
     @click="isModalOpen = true"

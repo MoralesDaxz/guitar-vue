@@ -4,8 +4,8 @@
 
 </script>
 <template>
-  <section class="d-flex flex-column justify-content-between h-100 w-100">
+  <section class=" w-100 h-min">
     <Header />
-    <Footer />
   </section>
+  <Footer />
 </template>
